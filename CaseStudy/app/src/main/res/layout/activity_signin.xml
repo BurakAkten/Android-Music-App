@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInPage">
+
+    <LinearLayout
+        android:id="@+id/half_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="326dp"
+        android:background="@drawable/half_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_weight="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="93dp"
+                android:layout_height="92dp"
+                android:layout_marginStart="141dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="141dp"
+                android:layout_marginBottom="154dp"
+                android:background="@drawable/logo"
+                android:contentDescription="Logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.311"></ImageView>
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="14dp"
+                android:text="@string/welcome"
+                android:textColor="@color/colorWhite"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/listen_message"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo"></TextView>
+
+            <TextView
+                android:id="@+id/listen_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="118dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="118dp"
+                android:layout_marginBottom="55dp"
+                android:width="138dp"
+                android:height="38dp"
+                android:gravity="center_horizontal"
+                android:text="@string/listen_message"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="298dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="398dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="226dp"
+        android:background="@drawable/edittext_layout_border"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5mm"
+        android:textColor="@color/emailTextColor"
+        android:textColorHint="@color/emailTextColor"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/half_background"></EditText>
+
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="298dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="162dp"
+        android:background="@drawable/edittext_layout_border"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="5mm"
+        android:textColor="@color/emailTextColor"
+        android:textColorHint="@color/emailTextColor"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="298dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="527dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/sign_in_button"
+        android:onClick="Login"
+        android:paddingLeft="5mm"
+        android:text="@string/login"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center_horizontal"
+        android:text="@string/newAccount"
+        android:textColor="@color/newAccountTextColor"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/half_background"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

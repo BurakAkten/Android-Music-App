@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="emailTextColor">#1e2365</color>
+    <color name="mySong">#06021c</color>
+    <color name="listIndexColor">#050120</color>
+    <color name="listArtistColor">#6f729c</color>
+    <color name="newAccountTextColor">#1e2365</color>
+    <color name="border">#e5e5e5</color>
+    <color name="playlistCol">#c3d0d7</color>
+    <color name="song_name_color">#93a8b3</color>
+    <color name="durationColor">#93a8b3</color>
+
+
+
+
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MondayHero_Case</string>
+    <string name="welcome">Welcome</string>
+    <string name="listen_message">Listen good music whenever you want</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="newAccount">New Account?</string>
+    <string name="mySongText">My Songs</string>
+    <string name="listeningMessage">Listening your adding list</string>
+    <string name="playList">PLAYLIST</string>
+    <string name="bestVibes">Best Vibes of the WEEK</string>
+
+
+
+
+
+
+
+
+
+</resources>
