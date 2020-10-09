@@ -1,2 +1,2 @@
-# MondayHeroCase
+# Sample Music App UI 
 
